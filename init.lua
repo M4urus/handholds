@@ -1,3 +1,5 @@
+local S = minetest.get_translator(minetest.get_current_modname())
+
 handholds = {}
 
 handholds.nodes = {}
@@ -165,7 +167,7 @@ minetest.register_node("handholds:climbable_air", {
 
 -- handholds tool
 minetest.register_tool("handholds:climbing_pick", {
-	description = "Climbing Pick",
+	description = S("Climbing Pick"),
 	inventory_image = "handholds_tool.png",
 	sound = {breaks = "default_tool_breaks"},
 	on_use = function(itemstack, player, pointed_thing)
